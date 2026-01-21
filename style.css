@@ -1,0 +1,131 @@
+/* ===== BODY (CUTE BACKGROUND) ===== */
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #fff0f6;
+  background-image:
+    radial-gradient(#ffb3c6 2px, transparent 2px),
+    radial-gradient(#ffd6e8 2px, transparent 2px);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== PHONE FRAME ===== */
+.phone-frame {
+  width: 360px;
+  height: 640px;
+  background: #111;
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== SCREEN ===== */
+.screen {
+  background: linear-gradient(to bottom, #ffffff, #fff7fb);
+  height: 100%;
+  border-radius: 30px;
+  padding: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ===== PAGE ===== */
+.page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeUp 0.8s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== TEXT ===== */
+h1 {
+  color: #ff5c8a;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  margin-top: 25px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #ff5c8a;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 92, 138, 0.4);
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* YES BUTTON */
+.yes {
+  background: #ff5c8a;
+  color: white;
+}
+
+/* MAYBE BUTTON */
+.maybe {
+  background: #f0f0f0;
+  color: #333;
+}
+
+/* ===== CONFETTI / SURPRISE ===== */
+.confetti {
+  font-size: 28px;
+  margin-top: 20px;
+  animation: pop 1s infinite alternate;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
